@@ -1,0 +1,117 @@
+.ivan-photo {
+  width: 50%;
+  height: auto;
+  border-top-left-radius: 350px;
+  border-top-right-radius: 350px;
+}
+
+/* navbar */
+#navbar {
+  background-color: rgba(129, 139, 126);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(247, 238, 227);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+#navbar-link {
+  cursor: pointer;
+}
+
+
+
+/* about */
+#about {
+  background-color: rgba(129, 139, 126);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#about-ivan {
+  color: rgb(247, 238, 227);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about-ivan h1 {
+  font-size: 60px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#about-ivan p {
+  font-size: 30px;
+}
+
+#about-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contacts {
+  color: rgb(247, 238, 227);
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+/* services */
+#services {
+  background-color: rgb(247, 238, 227);
+  padding-top: 2rem;
+}
+
+#services h1 {
+  font-size: 60px;
+}
+
+#services-photos {
+  display: flex;
+  justify-content: center;
+}
+
+#services-photos img {
+  width: 25%;
+  margin-top: 4rem;
+}
+
+
+#services-list{
+  margin-top: 1rem;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+
+
+/* location */
+#location {
+  background-color: rgb(164, 96, 96);
+  padding-top: 2rem;
+  padding-bottom: 7rem;
+}
+
+#location h1{
+  font-size: 60px;
+  color: rgb(247, 238, 227);
+}
+
+#location-info{
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(247, 238, 227);
+}
+
+#location-info h2{
+  font-size:xx-large;
+}
+
+#location-info iframe{
+  outline-style: solid;
+}
