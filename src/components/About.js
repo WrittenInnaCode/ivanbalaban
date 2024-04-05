@@ -10,16 +10,14 @@ const About = () => {
                     <div id="about-ivan">
                         <h1>Ivan Balaban</h1>
                         <p>
-                            Your personal stylist
+                            Your personal hairstylist
                         </p>
                         <p>Here you will write a little bit about yourself.</p>
                     </div>
 
-                    <div id="contacts">
-                        <p>
-                            (818) 674-3491
-                        </p>
-                    </div>
+                    <p id="contacts">
+                        (818) 674-3491
+                    </p>
                 </div>
 
                 <div id="ivan-photo-box">

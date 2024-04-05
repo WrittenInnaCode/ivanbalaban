@@ -1,10 +1,10 @@
 /* navbar */
 #navbar {
   background-color: rgba(129, 139, 126);
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   color: rgb(247, 238, 227);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
@@ -12,6 +12,15 @@
 
 .navbar-link {
   cursor: pointer;
+  padding: 0rem 3rem 0rem 3rem;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
+
 }
 
 
@@ -39,6 +48,7 @@
   padding-bottom: 1rem;
   animation: aboutmove 2s;
   animation-fill-mode: forwards;
+  padding-left: 1rem;
 }
 
 #about-ivan p {
@@ -114,19 +124,24 @@
   #ivan-photo-box {
     width: 100%;
   }
+  .ivan-photo {
+    max-width: 94%;
+  }
 
   #about {
     padding-top: 3rem;
   }
 
-  #about-ivan p, #contacts p{
-        text-align: center;
+  #about-ivan p,
+  #contacts {
+    text-align: center;
   }
 
   @keyframes ivanmove {
     from {
       bottom: 40px;
     }
+
     to {
       bottom: 0px;
     }
@@ -136,6 +151,7 @@
     from {
       bottom: 0px;
     }
+
     to {
       bottom: 60px;
     }
@@ -145,6 +161,7 @@
     from {
       bottom: 0px;
     }
+
     to {
       bottom: 40px;
     }
@@ -161,6 +178,8 @@
 
 #services h1 {
   font-size: 60px;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 #services-photos {
@@ -188,8 +207,6 @@
   color: rgb(93, 102, 90);
   text-transform: uppercase;
   font-weight: bold;
-  /* text-decoration-line: underline;
-  text-decoration-color: rgb(201, 199, 199);   */
 }
 
 .services-items {
@@ -199,8 +216,11 @@
 }
 
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
+  #services {
+    padding-top: 0.1rem;
+  }
+
   #services-photos img {
     width: 50%;
     /* Adjust for smaller screens */
@@ -217,13 +237,14 @@
 #location {
   background-color: rgb(164, 96, 96);
   padding-top: 2rem;
-  padding-bottom: 7rem;
+  padding-bottom: 3rem;
 }
 
 #location h1 {
   font-size: 60px;
   color: rgb(247, 238, 227);
   padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 #location-info {
@@ -236,15 +257,25 @@
   font-size: xx-large;
 }
 
-/* #location-info iframe {
-  outline-style: solid;
-} */
-
 #address {
   padding: 1rem;
+    text-align: center;
 }
 
 @media (max-width: 840px) {
+  #location {
+    padding-top: 0.1rem;
+    padding-bottom: 0rem;
+  }
+
+  #location h1 {
+    padding-bottom: 0rem;
+  }
+
+  #address {
+    padding: 0rem;
+  }
+
   #location-info {
     flex-direction: column-reverse;
     text-align: center;
@@ -254,4 +285,27 @@
     width: 100%;
     height: 350px;
   }
+}
+
+
+
+/* Footer */
+.footer {
+  background-color: rgb(100, 105, 138);
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer p {
+  color: rgb(247, 238, 227);
+  text-align: center;
+
+}
+
+.fa-instagram {
+  color: rgb(247, 238, 227);
+  font-size: 35px;
 }
