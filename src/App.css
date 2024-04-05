@@ -37,7 +37,7 @@
   font-size: 60px;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  animation: aboutmove 1s;
+  animation: aboutmove 2s;
   animation-fill-mode: forwards;
 }
 
@@ -54,17 +54,15 @@
   color: rgb(247, 238, 227);
   font-size: 30px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content:end;
   position: relative;
   animation: phonemove 2s;
   animation-fill-mode: forwards;
 }
 
-#ivan-photo-box{
-    width: 50%;
-    display:flex;
-    justify-content:center;
+#ivan-photo-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .ivan-photo {
@@ -77,18 +75,80 @@
 }
 
 @keyframes ivanmove {
-  from {left: 40px;}
-  to {left: 0px;}
+  from {
+    left: 40px;
+  }
+
+  to {
+    left: 0px;
+  }
 }
 
 @keyframes aboutmove {
-  from {left: 0px;}
-  to {left: 60px;}
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 60px;
+  }
 }
 
 @keyframes phonemove {
-  from {left: 0px;}
-  to {left: 100px;}
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 100px;
+  }
+}
+
+
+@media (max-width: 840px) {
+  #about-flex {
+    flex-direction: column;
+
+  }
+
+  #ivan-photo-box {
+    width: 100%;
+  }
+
+  #about {
+    padding-top: 3rem;
+  }
+
+  #about-ivan p, #contacts p{
+        text-align: center;
+  }
+
+  @keyframes ivanmove {
+    from {
+      bottom: 40px;
+    }
+    to {
+      bottom: 0px;
+    }
+  }
+
+  @keyframes aboutmove {
+    from {
+      bottom: 0px;
+    }
+    to {
+      bottom: 60px;
+    }
+  }
+
+  @keyframes phonemove {
+    from {
+      bottom: 0px;
+    }
+    to {
+      bottom: 40px;
+    }
+  }
 }
 
 
@@ -106,57 +166,92 @@
 #services-photos {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #services-photos img {
   width: 25%;
-  margin-top: 5rem;
 }
 
-#services-list{
-  display: flex;
-  justify-content: space-evenly;
+#services-list {
+  margin: auto;
+  text-align: center;
+  background: #ffffff91;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 3rem;
 }
 
-.services-group{
-  color: rgba(129, 139, 126);
-  margin-top: 1rem;
-  text-transform:uppercase;
-  font-weight:bold;
-  text-decoration-line: underline;
-  text-decoration-color: rgb(201, 199, 199);  
+.services-group {
+  color: rgb(93, 102, 90);
+  text-transform: uppercase;
+  font-weight: bold;
+  /* text-decoration-line: underline;
+  text-decoration-color: rgb(201, 199, 199);   */
 }
 
-.services-items{
-font-size: large;
-margin-bottom: 5rem;
+.services-items {
+  font-size: large;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #services-photos img {
+    width: 50%;
+    /* Adjust for smaller screens */
+  }
+
+  #services-list {
+    margin: 2rem;
+  }
 }
 
 
 
 /* location */
 #location {
-  background-color:rgb(164, 96, 96);
+  background-color: rgb(164, 96, 96);
   padding-top: 2rem;
   padding-bottom: 7rem;
 }
 
-#location h1{
+#location h1 {
   font-size: 60px;
   color: rgb(247, 238, 227);
   padding-bottom: 1rem;
 }
 
-#location-info{
+#location-info {
   display: flex;
   justify-content: space-evenly;
   color: rgb(247, 238, 227);
 }
 
-#location-info h2{
-  font-size:xx-large;
+#location-info h2 {
+  font-size: xx-large;
 }
 
-#location-info iframe{
+/* #location-info iframe {
   outline-style: solid;
+} */
+
+#address {
+  padding: 1rem;
+}
+
+@media (max-width: 840px) {
+  #location-info {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #location-info iframe {
+    width: 100%;
+    height: 350px;
+  }
 }
