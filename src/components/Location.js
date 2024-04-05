@@ -16,7 +16,7 @@ const Location = () => {
 
                 <div>
                     <h2>Bloom Studio</h2>
-                    <p>6041 Variel Ave #1005, Woodland Hills, CA 91367</p>
+                    <address>6041 Variel Ave #1005, Woodland Hills, CA 91367</address>
                     <p>Monday-Saturday 9am-5pm</p>
                     <br />
                     <h3>(818) 674-3491</h3>

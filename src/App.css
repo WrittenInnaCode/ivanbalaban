@@ -1,10 +1,3 @@
-.ivan-photo {
-  width: 50%;
-  height: auto;
-  border-top-left-radius: 350px;
-  border-top-right-radius: 350px;
-}
-
 /* navbar */
 #navbar {
   background-color: rgba(129, 139, 126);
@@ -17,7 +10,7 @@
   font-weight: bold;
 }
 
-#navbar-link {
+.navbar-link {
   cursor: pointer;
 }
 
@@ -35,12 +28,17 @@
 #about-ivan {
   color: rgb(247, 238, 227);
   font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  animation: aboutmove 2s;
+  animation-fill-mode: forwards;
 }
 
 #about-ivan h1 {
   font-size: 60px;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  animation: aboutmove 1s;
+  animation-fill-mode: forwards;
 }
 
 #about-ivan p {
@@ -49,21 +47,55 @@
 
 #about-flex {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #contacts {
   color: rgb(247, 238, 227);
   font-size: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content:end;
+  position: relative;
+  animation: phonemove 2s;
+  animation-fill-mode: forwards;
+}
+
+#ivan-photo-box{
+    width: 50%;
+    display:flex;
+    justify-content:center;
+}
+
+.ivan-photo {
+  max-width: 80%;
+  height: auto;
+  border-top-left-radius: 370px;
+  border-top-right-radius: 370px;
+  position: relative;
+  animation: ivanmove 2s;
+}
+
+@keyframes ivanmove {
+  from {left: 40px;}
+  to {left: 0px;}
+}
+
+@keyframes aboutmove {
+  from {left: 0px;}
+  to {left: 60px;}
+}
+
+@keyframes phonemove {
+  from {left: 0px;}
+  to {left: 100px;}
 }
 
 
 
 /* services */
 #services {
-  background-color: rgb(247, 238, 227);
+  background-color: rgb(251, 239, 224);
   padding-top: 2rem;
 }
 
@@ -78,21 +110,33 @@
 
 #services-photos img {
   width: 25%;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
-
 #services-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.services-group{
+  color: rgba(129, 139, 126);
   margin-top: 1rem;
   text-transform:uppercase;
   font-weight:bold;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(201, 199, 199);  
+}
+
+.services-items{
+font-size: large;
+margin-bottom: 5rem;
 }
 
 
 
 /* location */
 #location {
-  background-color: rgb(164, 96, 96);
+  background-color:rgb(164, 96, 96);
   padding-top: 2rem;
   padding-bottom: 7rem;
 }
@@ -100,6 +144,7 @@
 #location h1{
   font-size: 60px;
   color: rgb(247, 238, 227);
+  padding-bottom: 1rem;
 }
 
 #location-info{
