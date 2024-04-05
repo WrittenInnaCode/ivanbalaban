@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ivanbalaban/static/css/main.4fb09841.css",
+    "main.js": "/ivanbalaban/static/js/main.c36a98ce.js",
+    "static/js/453.81b68894.chunk.js": "/ivanbalaban/static/js/453.81b68894.chunk.js",
+    "static/media/DSC_8523-1.jpg": "/ivanbalaban/static/media/DSC_8523-1.657efa582690e5d4f25f.jpg",
+    "static/media/Ivan.jpg": "/ivanbalaban/static/media/Ivan.769b771d59b289e53adb.jpg",
+    "static/media/DSC_8341.jpg": "/ivanbalaban/static/media/DSC_8341.68db5dc3b01a39a298fd.jpg",
+    "static/media/DSC_8270.jpg": "/ivanbalaban/static/media/DSC_8270.3a0025f800cfdec01228.jpg",
+    "static/media/DSC_8560.jpg": "/ivanbalaban/static/media/DSC_8560.05636bb6a12b0fc265e4.jpg",
+    "index.html": "/ivanbalaban/index.html",
+    "main.4fb09841.css.map": "/ivanbalaban/static/css/main.4fb09841.css.map",
+    "main.c36a98ce.js.map": "/ivanbalaban/static/js/main.c36a98ce.js.map",
+    "453.81b68894.chunk.js.map": "/ivanbalaban/static/js/453.81b68894.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fb09841.css",
+    "static/js/main.c36a98ce.js"
+  ]
+}
