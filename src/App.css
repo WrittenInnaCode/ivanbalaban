@@ -2,11 +2,10 @@
 #navbar {
   background-color: rgba(129, 139, 126);
   padding-top: 1.5rem;
-  padding-bottom: 1rem;
   display: flex;
   justify-content: flex-end;
   color: rgb(247, 238, 227);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-weight: bold;
 }
 
@@ -28,45 +27,54 @@
 /* about */
 #about {
   background-color: rgba(129, 139, 126);
-  padding-top: 5rem;
+  padding-top: 0.5rem;
   padding-bottom: 5rem;
-  display: flex;
-  justify-content: space-evenly;
 }
 
-#about-ivan {
+#ivan-header{
   color: rgb(247, 238, 227);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  position: relative;
-  animation: aboutmove 2s;
-  animation-fill-mode: forwards;
-}
-
-#about-ivan h1 {
-  font-size: 60px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  animation: aboutmove 2s;
-  animation-fill-mode: forwards;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-size: 50px;
   padding-left: 1rem;
+  position: relative;
+  animation: mymove 2s;
+
+  font-family: "Big Shoulders Inline Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  /* font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal; */
+  
+  /* font-weight: 100; */
+  /* font-style: normal; */
 }
 
-#about-ivan p {
-  font-size: 30px;
-}
-
-#about-flex {
+#about-ivan{
   display: flex;
   justify-content: space-evenly;
 }
 
-#contacts {
+#ivan-information{
   color: rgb(247, 238, 227);
-  font-size: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  position: relative;
-  animation: phonemove 2s;
-  animation-fill-mode: forwards;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+
+#personal-stylist{
+  font-size: 25px;
+}
+
+#about-paragraph{
+  font-size: 20px;
+  padding-top: 3rem;
+}
+
+#phone-number {
+  font-size: 20px;
 }
 
 #ivan-photo-box {
@@ -76,51 +84,20 @@
 }
 
 .ivan-photo {
-  max-width: 80%;
+  max-width: 85%;
   height: auto;
   border-top-left-radius: 370px;
   border-top-right-radius: 370px;
-  position: relative;
-  animation: ivanmove 2s;
 }
 
-@keyframes ivanmove {
-  from {
-    left: 40px;
-  }
 
-  to {
-    left: 0px;
-  }
-}
-
-@keyframes aboutmove {
-  from {
-    left: 0px;
-  }
-
-  to {
-    left: 60px;
-  }
-}
-
-@keyframes phonemove {
-  from {
-    left: 0px;
-  }
-
-  to {
-    left: 100px;
-  }
+@keyframes mymove {
+  from {left: 300px;}
+  to {left: 0px;}
 }
 
 
 @media (max-width: 840px) {
-  #about-flex {
-    flex-direction: column;
-
-  }
-
   #ivan-photo-box {
     width: 100%;
   }
@@ -129,42 +106,15 @@
   }
 
   #about {
-    padding-top: 3rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
   }
 
-  #about-ivan p,
-  #contacts {
+  #about-ivan {
+    display: flex;
+    flex-direction: column-reverse;
     text-align: center;
-  }
-
-  @keyframes ivanmove {
-    from {
-      bottom: 40px;
-    }
-
-    to {
-      bottom: 0px;
-    }
-  }
-
-  @keyframes aboutmove {
-    from {
-      bottom: 0px;
-    }
-
-    to {
-      bottom: 60px;
-    }
-  }
-
-  @keyframes phonemove {
-    from {
-      bottom: 0px;
-    }
-
-    to {
-      bottom: 40px;
-    }
   }
 }
 
@@ -177,7 +127,15 @@
 }
 
 #services h1 {
-  font-size: 60px;
+  font-family: "Big Shoulders Inline Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  /* font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal; */
+
+  font-size: 50px;
   padding-left: 1rem;
   padding-bottom: 1.5rem;
 }
@@ -207,9 +165,16 @@
   color: rgb(93, 102, 90);
   text-transform: uppercase;
   font-weight: bold;
+
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 .services-items {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 400; */
+  font-style: normal;
+
   font-size: large;
   margin-bottom: 2rem;
   line-height: 1.6;
@@ -241,7 +206,15 @@
 }
 
 #location h1 {
-  font-size: 60px;
+  font-family: "Big Shoulders Inline Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  /* font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal; */
+
+  font-size: 50px;
   color: rgb(247, 238, 227);
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -259,7 +232,11 @@
 
 #address {
   padding: 1rem;
-    text-align: center;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 @media (max-width: 840px) {
@@ -302,7 +279,11 @@
 .footer p {
   color: rgb(247, 238, 227);
   text-align: center;
-
+  
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .fa-instagram {

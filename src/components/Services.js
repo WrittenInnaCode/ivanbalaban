@@ -25,7 +25,7 @@ const Services = () => {
                 </div>
 
                 <h2 className="services-group">Hair Styling / Blowdry</h2>
-                <div className='services-items'><div>Hair Wash / Shampoo</div></div>
+                <div className='services-items'><div>Hair Wash / Conditioning</div></div>
 
                 <h2 className="services-group">Hair Treatments</h2>
                 <div className='services-items'>

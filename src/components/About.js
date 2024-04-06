@@ -5,19 +5,15 @@ const About = () => {
     return (
         <div id="about">
 
-            <div id="about-flex">
-                <div>
-                    <div id="about-ivan">
-                        <h1>Ivan Balaban</h1>
-                        <p>
-                            Your personal hairstylist
-                        </p>
-                        <p>Here you will write a little bit about yourself.</p>
-                    </div>
+            <div id="ivan-header">
+                <h1>Ivan Balaban</h1>
+            </div>
 
-                    <p id="contacts">
-                        (818) 674-3491
-                    </p>
+            <div id="about-ivan">
+                <div id="ivan-information">
+                    <p id="personal-stylist">Your personal hairstylist</p>
+                    <p id="phone-number">(818) 674-3491</p>
+                    <p id="about-paragraph">Here you will write a little bit about yourself.</p>
                 </div>
 
                 <div id="ivan-photo-box">
@@ -25,8 +21,8 @@ const About = () => {
                         src={ivanPhoto}
                         alt="Ivan Balaban, Professional Hairdresser" />
                 </div>
-
             </div>
+
         </div>
     );
 };
