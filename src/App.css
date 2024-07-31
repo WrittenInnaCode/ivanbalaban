@@ -57,6 +57,7 @@
 }
 
 #ivan-information{
+  width: 50%;
   color: rgb(247, 238, 227);
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
@@ -66,15 +67,19 @@
 
 #personal-stylist{
   font-size: 25px;
+  padding: 0rem 2rem 1rem 2rem;
+  font-weight: bold;
 }
 
 #about-paragraph{
-  font-size: 20px;
-  padding-top: 3rem;
+  font-size: 21px;
+  padding: 4rem 2rem;
 }
 
 #phone-number {
   font-size: 20px;
+  padding: 0rem 2rem 0rem 2rem;
+  font-weight: bold;
 }
 
 #ivan-photo-box {
@@ -110,11 +115,17 @@
     display: flex;
     flex-direction: column;
   }
+  #about-paragraph{
+    padding:2rem;
+  }
 
   #about-ivan {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
+  }
+  #ivan-information{
+    width: 100%;
   }
 }
 
