@@ -172,7 +172,7 @@
   margin-bottom: 3rem;
 }
 
-.services-group {
+.service-name {
   color: rgb(93, 102, 90);
   text-transform: uppercase;
   font-weight: bold;
@@ -180,15 +180,25 @@
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
-.services-items {
+.services-group{
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: 400; */
-  font-style: normal;
-
   font-size: large;
   margin-bottom: 2rem;
   line-height: 1.6;
+}
+
+.services-items {
+  list-style-type:none;
+  /* font-weight: 400; */
+  /* font-style: normal; */
+}
+
+.services-prices {
+  list-style-type:none;
 }
 
 

@@ -12,35 +12,82 @@ const Services = () => {
 
             <div id="services-list">
 
-                <h2 className="services-group">Haircuts </h2>
-                <div className='services-items'><div>Women / Men / Children</div></div>
-
-                <h2 className="services-group">Hair Color</h2>
-                <div className='services-items'>
-                    <div>Full Color</div>
-                    <div>Root Touch Up</div>
-                    <div>Color Correction</div>
-                    <div>Highlights</div>
-                    <div>Balayage</div>
+                <h2 className="service-name">Haircuts </h2>
+                <div className="services-group">
+                    <ul className='services-items'>
+                        <li>Women</li>
+                        <li>Hair trim</li>
+                        <li>Men</li>
+                        <li>Children</li>
+                    </ul>
+                    <ul className='services-prices'>
+                        <li>$100</li>
+                        <li>$60</li>
+                        <li>$50</li>
+                        <li>$45</li>
+                    </ul>
                 </div>
 
-                <h2 className="services-group">Hair Styling / Blowdry</h2>
-                <div className='services-items'><div>Hair Wash / Conditioning</div></div>
-
-                <h2 className="services-group">Hair Treatments</h2>
-                <div className='services-items'>
-                    <div>Keratin Treatment / Brazilian Blow out</div>
-                    <div>Bio-curling / Perm</div>
-                    <div>Hair Repair Treatments</div>
+                <h2 className="service-name">Hair Color</h2>
+                <div className="services-group">
+                    <ul className='services-items'>
+                        <li>Full Color</li>
+                        <li>Root Bleaching</li>
+                        <li>Partial Highlights</li>
+                        <li>Full Highlights</li>
+                        <li>Balayage / Shatush / Airtouch</li>
+                        <li>Toner</li>
+                    </ul>
+                    <ul className='services-prices'>
+                        <li>$190</li>
+                        <li>$200</li>
+                        <li>$150</li>
+                        <li>$200</li>
+                        <li>$200</li>
+                        <li>$50</li>
+                    </ul>
                 </div>
 
-                <h2 className="services-group">Face</h2>
-                <div className='services-items'>
-                    <div>Beard Grooming / Trim</div>
-                    <div>Razor Shave</div>
-                    <div>Facial Waxing</div>
+                <h2 className="service-name">Hair Styling</h2>
+                <div className="services-group">
+                    <ul className='services-items'>
+                        <li>Blowdry</li>
+                        <li>Hair styling</li>
+                    </ul>
+                    <ul className='services-prices'>
+                        <li>$50</li>
+                        <li>$15</li>
+                    </ul>
                 </div>
 
+                <h2 className="service-name">Hair Treatments</h2>
+                <div className="services-group">
+                    <ul className='services-items'>
+                        <li>Keratin Treatment / Brazilian Blow out</li>
+                        <li>Bio-curling / Perm</li>
+                        <li>Hair Repair Treatments</li>
+                    </ul>
+                    <ul className='services-prices'>
+                        <li>$200-$350</li>
+                        <li>$200</li>
+                        <li>$150</li>
+                    </ul>
+                </div>
+
+                <h2 className="service-name">Face</h2>
+                <div className="services-group">
+                    <ul className='services-items'>
+                        <div>Beard Grooming / Trim</div>
+                        <div>Facial Waxing</div>
+                        <div>Neck Waxing</div>
+                    </ul>
+                    <ul className='services-prices'>
+                        <li>$20</li>
+                        <li>$20 per area</li>
+                        <li>$30</li>
+                    </ul>
+
+                </div>
             </div>
 
             <div id="services-photos">
