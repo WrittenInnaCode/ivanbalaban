@@ -12,82 +12,89 @@ const Services = () => {
 
             <div id="services-list">
 
-                <h2 className="service-name">Haircuts </h2>
-                <div className="services-group">
-                    <ul className='services-items'>
-                        <li>Women</li>
-                        <li>Hair trim</li>
-                        <li>Men</li>
-                        <li>Children</li>
-                    </ul>
-                    <ul className='services-prices'>
-                        <li>$100</li>
-                        <li>$60</li>
-                        <li>$50</li>
-                        <li>$45</li>
-                    </ul>
-                </div>
+                <table className="services-table">
+                    <th colspan="2" className="service-header">Haircuts</th>
+                    <tr>
+                        <td>Women</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Hair trim</td>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <td>Men</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Children</td>
+                        <td>$45</td>
+                    </tr>
 
-                <h2 className="service-name">Hair Color</h2>
-                <div className="services-group">
-                    <ul className='services-items'>
-                        <li>Full Color</li>
-                        <li>Root Bleaching</li>
-                        <li>Partial Highlights</li>
-                        <li>Full Highlights</li>
-                        <li>Balayage / Shatush / Airtouch</li>
-                        <li>Toner</li>
-                    </ul>
-                    <ul className='services-prices'>
-                        <li>$190</li>
-                        <li>$200</li>
-                        <li>$150</li>
-                        <li>$200</li>
-                        <li>$200</li>
-                        <li>$50</li>
-                    </ul>
-                </div>
+                    <th colspan="2" className="service-header">Hair Color</th>
+                    <tr>
+                        <td>Full Color</td>
+                        <td>$190</td>
+                    </tr>
+                    <tr>
+                        <td>Root Bleaching</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Partial Highlights</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Full Highlights</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Balayage / Shatush / Airtouch</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Toner</td>
+                        <td>$50</td>
+                    </tr>
 
-                <h2 className="service-name">Hair Styling</h2>
-                <div className="services-group">
-                    <ul className='services-items'>
-                        <li>Blowdry</li>
-                        <li>Hair styling</li>
-                    </ul>
-                    <ul className='services-prices'>
-                        <li>$50</li>
-                        <li>$15</li>
-                    </ul>
-                </div>
+                    <th colspan="2" className="service-header">Hair Styling</th>
+                    <tr>
+                        <td>Blowdry</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Hair styling</td>
+                        <td>$15</td>
+                    </tr>
 
-                <h2 className="service-name">Hair Treatments</h2>
-                <div className="services-group">
-                    <ul className='services-items'>
-                        <li>Keratin Treatment / Brazilian Blow out</li>
-                        <li>Bio-curling / Perm</li>
-                        <li>Hair Repair Treatments</li>
-                    </ul>
-                    <ul className='services-prices'>
-                        <li>$200-$350</li>
-                        <li>$200</li>
-                        <li>$150</li>
-                    </ul>
-                </div>
+                    <th colspan="2" className="service-header">Hair Treatments</th>
+                    <tr>
+                        <td>Keratin Treatment / Brazilian Blow out</td>
+                        <td>$200-$350</td>
+                    </tr>
+                    <tr>
+                        <td>Bio-curling / Perm</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Hair Repair Treatments</td>
+                        <td>$150</td>
+                    </tr>
 
-                <h2 className="service-name">Face</h2>
-                <div className="services-group">
-                    <ul className='services-items'>
-                        <div>Beard Grooming / Trim</div>
-                        <div>Facial Waxing</div>
-                        <div>Neck Waxing</div>
-                    </ul>
-                    <ul className='services-prices'>
-                        <li>$20</li>
-                        <li>$20 per area</li>
-                        <li>$30</li>
-                    </ul>
-
-                </div>
+                    <th colspan="2" className="service-header">Face</th>
+                    <tr>
+                        <td>Beard Grooming / Trim</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>Facial Waxing</td>
+                        <td>$20 per area</td>
+                    </tr>
+                    <tr>
+                        <td>Neck Waxing</td>
+                        <td>$30</td>
+                    </tr>
+                </table>
             </div>
 
             <div id="services-photos">
