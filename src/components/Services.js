@@ -16,92 +16,92 @@ const Services = () => {
                     <th colspan="2" className="service-header1">Haircuts</th>
                     <tr>
                         <td>Women</td>
-                        <td>$100</td>
+                        <td className='price'>$100</td>
                     </tr>
                     <tr>
                         <td>Hair trim</td>
-                        <td>$60</td>
+                        <td className='price'>$60</td>
                     </tr>
                     <tr>
                         <td>Men</td>
-                        <td>$50</td>
+                        <td className='price'>$50</td>
                     </tr>
                     <tr>
                         <td>Children</td>
-                        <td>$45</td>
+                        <td className='price'>$45</td>
                     </tr>
 
                     <th colspan="2" className="service-header">Hair Color</th>
                     <tr>
                         <td>Full Color</td>
-                        <td>$190</td>
+                        <td className='price'>$190</td>
                     </tr>
                     <tr>
                         <td>Root Bleaching</td>
-                        <td>$200</td>
+                        <td className='price'>$200</td>
                     </tr>
                     <tr>
                         <td>Partial Highlights</td>
-                        <td>$150</td>
+                        <td className='price'>$150</td>
                     </tr>
                     <tr>
                         <td>Full Highlights</td>
-                        <td>$200</td>
+                        <td className='price'>$200</td>
                     </tr>
                     <tr>
                         <td>Balayage / Shatush / Airtouch</td>
-                        <td>$200</td>
+                        <td className='price'>$200</td>
                     </tr>
                     <tr>
                         <td>Toner</td>
-                        <td>$50</td>
+                        <td className='price'>$50</td>
                     </tr>
 
                     <th colspan="2" className="service-header">Hair Styling</th>
                     <tr>
                         <td>Blowdry</td>
-                        <td>$50</td>
+                        <td className='price'>$50</td>
                     </tr>
                     <tr>
                         <td>Hair styling</td>
-                        <td>$15</td>
+                        <td className='price'>$15</td>
                     </tr>
 
                     <th colspan="2" className="service-header">Hair Treatments</th>
                     <tr>
-                        <td>Keratin Treatment / Brazilian Blow out</td>
-                        <td>$200-$350</td>
+                        <td>Keratin Treatment</td>
+                        <td className='price'>$200-$350</td>
                     </tr>
                     <tr>
                         <td>Bio-curling / Perm</td>
-                        <td>$200</td>
+                        <td className='price'>$200</td>
                     </tr>
                     <tr>
                         <td>Hair Repair Treatments</td>
-                        <td>$150</td>
+                        <td className='price'>$150</td>
                     </tr>
 
                     <th colspan="2" className="service-header">Face</th>
                     <tr>
                         <td>Beard Grooming / Trim</td>
-                        <td>$20</td>
+                        <td className='price'>$20</td>
                     </tr>
                     <tr>
                         <td>Facial Waxing</td>
-                        <td>$20/area</td>
+                        <td className='price'>$20/area</td>
                     </tr>
                     <tr>
                         <td>Neck Waxing</td>
-                        <td>$30</td>
+                        <td className='price'>$30</td>
                     </tr>
                 </table>
             </div>
 
             <div id="services-photos">
-                <img src={photo1} alt="services photo"></img>
-                <img src={photo2} alt="services photo"></img>
-                <img src={photo3} alt="services photo"></img>
-                <img src={photo4} alt="services photo"></img>
+                <img src={photo1} alt="services hair wash"></img>
+                <img src={photo2} alt="services instruments"></img>
+                <img src={photo3} alt="services hair cutting"></img>
+                <img src={photo4} alt="services hair styling"></img>
             </div>
         </div>
     );

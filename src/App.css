@@ -201,7 +201,11 @@
 }
 
 .services-table td{
-padding-left: 3rem;
+padding-left: 2.8rem;
+}
+
+.price{
+  text-align: center;
 }
 
 @media (max-width: 768px) {
