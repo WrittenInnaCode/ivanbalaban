@@ -13,7 +13,7 @@ const Services = () => {
             <div id="services-list">
 
                 <table className="services-table">
-                    <th colspan="2" className="service-header">Haircuts</th>
+                    <th colspan="2" className="service-header1">Haircuts</th>
                     <tr>
                         <td>Women</td>
                         <td>$100</td>
@@ -88,7 +88,7 @@ const Services = () => {
                     </tr>
                     <tr>
                         <td>Facial Waxing</td>
-                        <td>$20 per area</td>
+                        <td>$20/area</td>
                     </tr>
                     <tr>
                         <td>Neck Waxing</td>

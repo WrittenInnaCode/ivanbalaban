@@ -180,6 +180,14 @@
   padding-bottom: 1rem;
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
+.service-header1{
+  color: rgb(93, 102, 90);
+  text-transform: uppercase;
+  font-weight:800;
+  font-size:1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
 .services-table{
   width: 80%;
@@ -215,7 +223,7 @@ padding-left: 3rem;
   }
 
   #services-list {
-    margin: 2rem;
+    margin: 1rem;
   }
 }
 
