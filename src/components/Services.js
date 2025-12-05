@@ -24,7 +24,7 @@ const Services = () => {
                     </tr>
                     <tr>
                         <td>Men</td>
-                        <td className='price'>$50</td>
+                        <td className='price'>$45</td>
                     </tr>
                     <tr>
                         <td>Children</td>
