@@ -1,4 +1,5 @@
 import React from 'react';
+import BookNowButton from './BookNow';
 
 const Location = () => {
     return (
@@ -27,8 +28,9 @@ const Location = () => {
                     <p>Monday-Saturday 9am-5pm</p>
                     <br />
                     <h3>(818) 674-3491</h3>
-                    <p>Call or text to schedule your appointment!</p>
+                    {/* <p>Call or text to schedule your appointment!</p> */}
                     <br />
+                    <BookNowButton />
                 </div>
             </div>
         </div>
