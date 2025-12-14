@@ -3,11 +3,14 @@
   background-color: rgba(129, 139, 126);
   padding-top: 1.5rem;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: flex-end;
-  flex-wrap: wrap;          /* allow wrapping */
-  gap: 12px;                /* spacing between items (better than padding) */
-  padding: 1.5rem 1rem;     /*  add side padding so it doesn’t hug edges */
+  flex-wrap: wrap;
+  /* allow wrapping */
+  gap: 12px;
+  /* spacing between items (better than padding) */
+  padding: 1.5rem 1rem;
+  /*  add side padding so it doesn’t hug edges */
   color: rgb(247, 238, 227);
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-weight: bold;
@@ -25,18 +28,32 @@
   }
 
   .navbar-link {
-    padding: 0 1rem;         /* reduce padding so it fits on phones */
+    padding: 0 1rem;
+    /* reduce padding so it fits on phones */
   }
 
 }
 
+@media (max-width: 400px) {
+  #navbar {
+    flex-direction: column;
+    /* button + links in a neat vertical stack */
+    align-items: center;
+  }
+
+  .navbar-link {
+    padding: 0.25rem 0;
+  }
+}
+
 
 /* Book Now Button */
-.bookBtn{
+.bookBtn {
   display: inline-block;
-  white-space: nowrap;      /* keeps “Book Now” on one line */
+  white-space: nowrap;
+  /* keeps “Book Now” on one line */
   padding: 14px 22px;
-  background-color: #111; 
+  background-color: #111;
   color: rgb(247, 238, 227);
   text-decoration: none;
   font-size: 1rem;
@@ -65,7 +82,7 @@
   padding-bottom: 5rem;
 }
 
-#ivan-header{
+#ivan-header {
   color: rgb(247, 238, 227);
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-size: 50px;
@@ -80,17 +97,34 @@
   /* font-family: "Major Mono Display", monospace;
   font-weight: 400;
   font-style: normal; */
-  
+
   /* font-weight: 100; */
   /* font-style: normal; */
 }
 
-#about-ivan{
+@media (max-width: 768px) {
+  #ivan-header h1 {
+    font-size: 60px;
+    /* smaller, more balanced on phones */
+    margin: 0.5rem 0;
+    /* reduce default h1 spacing */
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #ivan-header h1 {
+    font-size: 50px;
+    margin: 0.25rem 0;
+  }
+}
+
+#about-ivan {
   display: flex;
   justify-content: space-evenly;
 }
 
-#ivan-information{
+#ivan-information {
   width: 50%;
   color: rgb(247, 238, 227);
   font-family: "Mulish", sans-serif;
@@ -99,13 +133,13 @@
   font-style: normal;
 }
 
-#personal-stylist{
+#personal-stylist {
   font-size: 25px;
   padding: 0rem 2rem 1rem 2rem;
   font-weight: bold;
 }
 
-#about-paragraph{
+#about-paragraph {
   font-size: 21px;
   padding: 4rem 2rem;
 }
@@ -131,8 +165,13 @@
 
 
 @keyframes mymove {
-  from {left: 300px;}
-  to {left: 0px;}
+  from {
+    left: 300px;
+  }
+
+  to {
+    left: 0px;
+  }
 }
 
 
@@ -140,6 +179,7 @@
   #ivan-photo-box {
     width: 100%;
   }
+
   .ivan-photo {
     max-width: 94%;
   }
@@ -149,8 +189,9 @@
     display: flex;
     flex-direction: column;
   }
-  #about-paragraph{
-    padding:2rem;
+
+  #about-paragraph {
+    padding: 2rem;
   }
 
   #about-ivan {
@@ -158,7 +199,8 @@
     flex-direction: column-reverse;
     text-align: center;
   }
-  #ivan-information{
+
+  #ivan-information {
     width: 100%;
   }
 }
@@ -208,24 +250,25 @@
 .service-header {
   color: rgb(93, 102, 90);
   text-transform: uppercase;
-  font-weight:800;
-  font-size:1.3rem;
+  font-weight: 800;
+  font-size: 1.3rem;
   padding-top: 2.5rem;
   padding-bottom: 1rem;
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
-.service-header1{
+
+.service-header1 {
   color: rgb(93, 102, 90);
   text-transform: uppercase;
-  font-weight:800;
-  font-size:1.3rem;
+  font-weight: 800;
+  font-size: 1.3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.services-table{
+.services-table {
   width: 80%;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
@@ -234,11 +277,11 @@
   line-height: 1.6;
 }
 
-.services-table td{
-padding-left: 2.8rem;
+.services-table td {
+  padding-left: 2.8rem;
 }
 
-.price{
+.price {
   text-align: center;
 }
 
@@ -247,13 +290,13 @@ padding-left: 2.8rem;
     padding-top: 0.1rem;
   }
 
-  .services-table{
+  .services-table {
     width: 100%;
   }
 
-  .services-table td{
+  .services-table td {
     padding-left: 0rem;
-    }
+  }
 
   #services-photos img {
     width: 50%;
@@ -348,7 +391,7 @@ padding-left: 2.8rem;
 .footer p {
   color: rgb(247, 238, 227);
   text-align: center;
-  
+
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;

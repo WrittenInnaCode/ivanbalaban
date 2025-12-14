@@ -26,8 +26,9 @@ const Location = () => {
                     <address>6041 Variel Ave #1005</address>
                     <address>Woodland Hills, CA 91367</address>
                     <p>Monday-Saturday 9am-5pm</p>
-                    <br />
+
                     <h3>(818) 674-3491</h3>
+                       <br />                 
                     {/* <p>Call or text to schedule your appointment!</p> */}
                    <div>
                     <BookNowButton />   
