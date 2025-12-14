@@ -29,8 +29,12 @@ const Location = () => {
                     <br />
                     <h3>(818) 674-3491</h3>
                     {/* <p>Call or text to schedule your appointment!</p> */}
+                   <div>
+                    <BookNowButton />   
+                   </div>
+                                     
                     <br />
-                    <BookNowButton />
+
                 </div>
             </div>
         </div>
